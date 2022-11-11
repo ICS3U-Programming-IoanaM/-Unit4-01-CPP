@@ -27,7 +27,7 @@ int main() {
 
         // if user imputed a negative number
         if (userNumInt <= 0) {
-            std::cout << "Input invalid! Please enter a POSITIVE number.";
+            std::cout << "Input invalid! Please enter a POSITIVE number." << std::endl;
 
         // if user imputed a whole number
         } else {
@@ -44,7 +44,7 @@ int main() {
 
     // if user did not input an integer
     } catch (std::invalid_argument) {
-        std::cout << "Input invalid! Please enter a POSITIVE number.";
+        std::cout << "Input invalid! Please enter a POSITIVE number." << std::endl;
     }
 
     std::cout << "Thank you for using this program!\n";
