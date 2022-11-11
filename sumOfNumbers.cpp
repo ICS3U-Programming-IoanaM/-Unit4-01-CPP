@@ -10,8 +10,11 @@
 
 int main() {
     // variables
-    std::string userNumString;
+    std::string userNumString = "";
     int userNumInt, counter, totalSum;
+
+    // declaring variables
+    userNumInt = counter = totalSum = 0;
 
     // getting user input
     std::cout << "Please enter a whole number: ";
