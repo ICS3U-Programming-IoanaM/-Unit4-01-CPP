@@ -47,5 +47,5 @@ int main() {
         std::cout << "Input invalid! Please enter a WHOLE number.";
     }
 
-    std::cout << "Thank you for using this program!";
+    std::cout << "Thank you for using this program!\n";
 }
