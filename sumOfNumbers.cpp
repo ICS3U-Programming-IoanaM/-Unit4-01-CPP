@@ -28,13 +28,12 @@ int main() {
         userNumFloat = stof(userNumString);
 
         // compares float to int to make sure user didn't input a decimal
-        if (userNumFloat == userNumInt) {
-            std::cout << "Input invalid !Please enter a POSITIVE number."
+        if (userNumFloat != userNumInt) {
+            std::cout << "Input invalid! Please enter a POSITIVE number."
             << std::endl;
-        }
 
         // if user imputed a negative number
-        if (userNumInt <= 0) {
+        } else if (userNumInt <= 0) {
             std::cout << "Input invalid! Please enter a POSITIVE number."
             << std::endl;
 
