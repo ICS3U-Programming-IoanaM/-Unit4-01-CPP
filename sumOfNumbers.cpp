@@ -12,6 +12,7 @@ int main() {
     // variables
     std::string userNumString = "";
     int userNumInt, counter, totalSum;
+    float userNumFloat;
 
     // declaring variables
     userNumInt = counter = totalSum = 0;
@@ -22,8 +23,14 @@ int main() {
 
     // try catch
     try {
-        // checks if user num is an integer or not
+        // checks if user num is an integer or a float
         userNumInt = stoi(userNumString);
+        userNumFloat = stof(userNumString);
+
+        // compares float to int to make sure user didn't input a decimal
+        if (userNumFloat == userNumInt) {
+            std::cout << "Input invalid !Please enter a POSITIVE number." << std::endl;
+        }
 
         // if user imputed a negative number
         if (userNumInt <= 0) {
