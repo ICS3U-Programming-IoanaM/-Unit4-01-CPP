@@ -11,11 +11,11 @@
 int main() {
     // variables
     std::string userNumString = "";
-    int userNumInt, counter, totalSum;
+    int userNumInt, counter, totalProduct;
     float userNumFloat;
 
     // declaring variables
-    userNumInt = counter = totalSum = 0;
+    userNumInt = counter = totalProduct = 0;
 
     // getting user input
     std::cout << "Please enter a whole number: ";
@@ -41,13 +41,13 @@ int main() {
         } else {
             // adds up all the numbers until the user's number
             while (counter <= userNumInt) {
-                totalSum += counter;
+                totalProduct += counter;
                 counter++;
             }
 
             // displays the sum of all the numbers until the user's number
             std::cout << "The sum of all the numbers until "
-                      << userNumInt << " is " << totalSum << std::endl;
+                      << userNumInt << " is " << totalProduct << std::endl;
         }
 
     // if user did not input an integer
