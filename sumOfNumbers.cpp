@@ -36,7 +36,7 @@ int main() {
 
             // displays the sum of all the numbers until the user's number
             std::cout << "The sum of all the numbers until "
-                      << userNumInt << " is " << totalSum;
+                      << userNumInt << " is " << totalSum << std::endl;
         }
 
     // if user did not input an integer
